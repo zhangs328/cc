@@ -1,0 +1,33 @@
+{
+    // ===== 文件编码 =====
+    "files.encoding": "utf8",
+    "files.autoGuessEncoding": false,
+
+    // ===== 终端配置 =====
+    "terminal.integrated.defaultProfile.windows": "UCRT64 (MSYS2)",
+    "terminal.integrated.profiles.windows": {
+        "UCRT64 (MSYS2)": {
+            "path": "C:/msys64/usr/bin/bash.exe",
+            "args": ["--login", "-i"],
+            "env": {
+                "MSYSTEM": "UCRT64",
+                "CHERE_INVOKING": "1"
+            }
+        }
+    },
+
+    // ===== Code Runner =====
+    "code-runner.runInTerminal": true,
+    "code-runner.fileDirectoryAsCwd": true,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.executorMap": {
+        "c": "gcc -Wall -fexec-charset=GBK $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt",
+        "cpp": "g++ -Wall -fexec-charset=GBK $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt"
+    },
+    "code-runner.languageIdToFileExtensionMap": {
+        "bat": ".bat",
+        "powershell": ".ps1",
+        "typescript": ".ts"
+    }
+}

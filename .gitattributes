@@ -1,0 +1,15 @@
+# 文本文件使用 LF 换行符
+*.c     text
+*.h     text
+*.md    text
+*.txt   text
+*.json  text
+
+# VS Code 配置文件
+.vscode/* text
+
+# 二进制文件不自动转换
+*.exe   binary
+*.o     binary
+*.obj   binary
+*.dll   binary
