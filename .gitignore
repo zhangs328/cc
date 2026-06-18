@@ -1,0 +1,33 @@
+# === 编译产物 ===
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.o
+*.obj
+*.lib
+*.a
+*.out
+*.app
+*.pdb
+*.ilk
+
+# === 构建目录 ===
+build/
+Debug/
+Release/
+x64/
+x86/
+Win32/
+
+# === IDE 和编辑器（保留 .vscode 中的配置文件） ===
+# 如果你不想跟踪 VS Code 配置，取消下面的注释
+# .vscode/
+
+# === 系统文件 ===
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
