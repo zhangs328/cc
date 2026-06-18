@@ -1,6 +1,6 @@
 @echo off
 chcp 65001 >nul
-cd /d "C:\Users\19839\Desktop\cc"
+cd /d "D:\19839\cc"
 
 git add .
 git commit -m "feat: daily practice %date%"

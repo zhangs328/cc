@@ -16,6 +16,9 @@
         }
     },
 
+    // ===== Python 配置 =====
+    "python.defaultInterpreterPath": "C:/Users/19839/AppData/Local/Programs/Python/Python312/python.exe",
+
     // ===== Code Runner =====
     "code-runner.runInTerminal": true,
     "code-runner.fileDirectoryAsCwd": true,
@@ -23,11 +26,23 @@
     "code-runner.clearPreviousOutput": true,
     "code-runner.executorMap": {
         "c": "gcc -Wall -fexec-charset=GBK $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt",
-        "cpp": "g++ -Wall -fexec-charset=GBK $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt"
+        "cpp": "g++ -Wall -fexec-charset=GBK $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt",
+        "python": "C:/Users/19839/AppData/Local/Programs/Python/Python312/python.exe"
+    },
+    "code-runner.executorMapByGlob": {
+        "*.py": "C:/Users/19839/AppData/Local/Programs/Python/Python312/python.exe $fullFileName"
     },
     "code-runner.languageIdToFileExtensionMap": {
         "bat": ".bat",
         "powershell": ".ps1",
         "typescript": ".ts"
-    }
+    },
+
+    // ===== 编辑器优化 =====
+    "editor.minimap.enabled": false,
+    "editor.fontSize": 16,
+    "editor.tabSize": 4,
+    "editor.renderWhitespace": "boundary",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true
 }
